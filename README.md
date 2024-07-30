@@ -14,4 +14,26 @@ Image processing is a branch of computer science that focuses on analyzing digit
 YOLOv3, short for "You Only Look Once version 3," is a state-of-the-art object detection model in the field of computer vision. It stands out for its speed and accuracy, capable of detecting objects in real-time with high precision. YOLOv3 utilizes a single neural network to predict bounding boxes and class probabilities directly from full images in one evaluation, making it significantly faster than traditional object detection methods.
 
 ## PROPOSED METHOLOGY
-In this project, as depicted in the Fig. 3.1, a webcam connected to a PC was utilized to capture images of traffic density in each lane. we utilized a webcam connected directly to a PC to capture live images of traffic lanes for monitoring vehicle density. The webcam was strategically positioned to cover all lanes effectively and adjusted for optimal image quality by tweaking settings such as resolution and frame rate. The captured images were processed using the YOLO (You Only Look Once) object detection model, a well-known deep learning algorithm for real-time object detection. We selected an appropriate version of YOLO trained specifically on vehicle datasets to ensure high accuracy in identifying and counting different types of vehicles in each lane.
+In this project, as depicted in the _Picture 1_, a webcam connected to a PC was utilized to capture images of traffic density in each lane. we utilized a webcam connected directly to a PC to capture live images of traffic lanes for monitoring vehicle density. The webcam was strategically positioned to cover all lanes effectively and adjusted for optimal image quality by tweaking settings such as resolution and frame rate. The captured images were processed using the YOLO (You Only Look Once) object detection model, a well-known deep learning algorithm for real-time object detection. We selected an appropriate version of YOLO trained specifically on vehicle datasets to ensure high accuracy in identifying and counting different types of vehicles in each lane.
+
+## Components Used
+- Arduino UNO
+- Camera Modules
+- Power Supply
+- LEDs
+- OpenCV Python Library
+- PySerial Python Library
+
+## Results and Analyses
+The analysis focused on evaluating the vehicle count in each lane captured by the YOLO (You Only Look Once) object detection model. The data provided insights into traffic density across different lanes, enabling a comparison of vehicle volumes. The decision-making algorithm processed the data to identify the lane with the highest vehicle density. We utilized the output from YOLO and the subsequent analysis to determine which traffic lights required adjustment in their phases, prioritizing lanes with high traffic flow. The algorithm's ability to make these decisions efficiently and in real-time was a key aspect of the analysis.
+
+Based on the analysis, the system demonstrated effective monitoring and control of traffic lights according to the vehicle density in each lane. The YOLO model achieved high accuracy in detecting and counting vehicles across all lanes, enabling precise identification of peak traffic periods. The Pyserial communication between the PC and the microcontroller was reliable, ensuring smooth transmission of data for traffic light control.
+
+By adjusting traffic light phases based on real-time vehicle count data, the system was able to optimize traffic flow, reducing congestion in areas of high density. Testing confirmed the microcontroller's responsiveness in controlling the traffic lights according to the data received. Overall, the results indicate that the system can significantly improve traffic management and provide a more efficient flow of traffic during peak times.
+
+## Conclusion
+With the help of this work, the issue of traffic may be quickly resolved because each signal's timing can be automatically altered in real time in accordance with the volume of traffic. Additionally, it will provide space for the ambulance and fire department in case of emergencies. Additionally, it will help members of the general public make decisions so they may use the auto-routing system to get where they're going on time. It explains how to decrease traffic congestion and avoid wasting time waiting for a green light on an empty road. It is also more accurate at detecting the presence of automobiles because it uses real traffic images. Since it simulates reality, it works noticeably better than systems that rely on the detection of the metal composition of the vehicle.
+
+One of the limitations of the project’s approach or that of the microcontroller used in this project viz. Arduino UNO, while it can perfectly process the live image capturization by the camera, is that it cannot process or read live video feed which makes it incompetent in comparison to much more powerful processors like Raspberry Pi.
+
+Although the method is efficient,more work needs to be done to get perfect precision. It proves that it is possible to do so and stops time from being lost because of a green light on an empty route. It is also more accurate at detecting the presence of automobiles because it uses real traffic images. Overall, the system works well, but more effort is required to make it completely accurate.
